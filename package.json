@@ -1,17 +1,14 @@
 {
-  "id": "slack",
-  "name": "Slack",
-  "version": "1.0.5",
-  "description": "Slack",
+  "id": "zendesk",
+  "name": "zendesk",
+  "version": "1.0.0",
+  "description": "Zendesk",
   "main": "index.js",
   "author": "Stefan Malzner <stefan@adlk.io>",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://{teamId}.slack.com",
-    "hasNotificationSound": true,
-    "hasDirectMessages": true,
-    "hasIndirectMessages": true,
+    "serviceURL": "https://{teamId}.zendesk.com/agent",
     "hasTeamId": true,
-    "urlInputSuffix": ".slack.com"
+    "urlInputSuffix": ".zendesk.com"
   }
 }
