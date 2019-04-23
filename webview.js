@@ -1,3 +1,5 @@
+import path from 'path';
+
 module.exports = (Franz) => {
   const getMessages = () => {
     let count = 0;
@@ -10,4 +12,6 @@ module.exports = (Franz) => {
     Franz.setBadge(count);
   };
   Franz.loop(getMessages);
+
+  Franz.injectCSS(path.join(__dirname, 'service.css'));
 };
